@@ -1,6 +1,7 @@
 # Custom
 ## dont track my notes
 *__*.md
+**/playground.*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
