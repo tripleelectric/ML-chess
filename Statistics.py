@@ -23,6 +23,23 @@ class Statistics:
         n = len(vector)
         return sum([vi - mean for vi in vector]) / n
 
+    @staticmethod
+    def mode(vector):
+        max_count = 0
+        mode_of_vector = None
+
+        for i in vector:
+            count = 0
+            for j in vector:
+                if i == j:
+                    count += 1
+            if count > max_count:
+                max_count = count
+                mode_of_vector = i
+        return mode_of_vector
+
 
 v = [1, 1, 2, 3, 4, 5]
-print(Statistics.median(v))
+# print(Statistics.median(v))
+
+print(Statistics.mode(v))
