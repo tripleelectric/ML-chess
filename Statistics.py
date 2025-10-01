@@ -11,7 +11,7 @@ class Statistics:
         return sum(vector) / len(vector)
 
     @staticmethod
-    def mode(vector):
+    def median(vector):
         if len(vector) % 2 == 0:
             index_one = int(len(vector) / 2)
             index_two = index_one - 1
@@ -25,4 +25,4 @@ class Statistics:
 
 
 v = [1, 1, 2, 3, 4, 5]
-print(Statistics.mode(v))
+print(Statistics.median(v))
