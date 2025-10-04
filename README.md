@@ -24,7 +24,14 @@ Obviously I could just take some established approach from the chess world,
 but, it's more appealing to me, to approach that problem with a more sophisticated
 approach. -> I have decided for a K-Means algorithmic solution.
 
-## 01 K-Means
+## Insights from evaluations
+- There is a difference between the columns "opening_name" and "opening_eco",
+that is, that
+opening_eco: 365 -> different openings
+opening_name: 1477 -> different openings
+```python
+print(f"Total unique Openings: {df['opening_name'].unique().__len__()}")
+print(f"Total unique Openings: {df['opening_eco'].unique().__len__()}")
+```
+I have to evaluate how I will proceed with the evaluation of openings.
 
-Info: K-Means is a **unsupervised** algorithm that finds patterns in data
-Goal: Find clusters in player ratings
