@@ -33,5 +33,6 @@ opening_name: 1477 -> different openings
 print(f"Total unique Openings: {df['opening_name'].unique().__len__()}")
 print(f"Total unique Openings: {df['opening_eco'].unique().__len__()}")
 ```
+"opening_name" seems to be more precise.
 I have to evaluate how I will proceed with the evaluation of openings.
 
